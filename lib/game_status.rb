@@ -44,9 +44,8 @@ def over?(board)
 end
 
 def winner(board)
-  winner = []
   if won?(board)
-    won?(board) << winner
-    return winner[0]
+    winner_index = won?(board)[0]
+    return board[winner_index]
   end
 end
