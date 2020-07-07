@@ -44,6 +44,7 @@ def over?(board)
 end
 
 def winner(board)
+winner = []
 winner = won?(board)
 return winner[0]
 end
